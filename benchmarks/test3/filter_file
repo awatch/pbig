@@ -1,0 +1,292 @@
+	InsertCnt = 0 RemoveCnt = 0
+Prepare Data
+Running ...
+Sampling ...
+avgX = 49.000000, avgY = 49.000000, avgZ = 49.000000
+nrc=2, nc=8, nmr=1.018052, cs=8192, nRecsPerCell=1272564
+nrc=3, nc=27, nmr=1.036320, cs=4096, nRecsPerCell=383822
+nrc=5, nc=125, nmr=1.073508, cs=2048, nRecsPerCell=85880
+nrc=10, nc=1000, nmr=1.150534, cs=1024, nRecsPerCell=11505
+nrc=20, nc=8000, nmr=1.315463, cs=512, nRecsPerCell=1644
+nrc=40, nc=64000, nmr=1.691140, cs=256, nRecsPerCell=264
+nrc=79, nc=493039, nmr=2.644173, cs=128, nRecsPerCell=53
+nrc=157, nc=3869893, nmr=5.504215, cs=64, nRecsPerCell=14
+host[decide _cellSize]: elapsed time 506.496002
+ + GridInfo
+ ++++ Total Device Memory free: 482 MB, used: 1053 MB, total: 1535 MB
+ _hasProfSteps = 0 _cellSize = 128 nCells = 493039 nRowCells 79
+plan_phase 10000000 objs NTPB 256 NTPB 256
+kernel[copy in]: elapsed time 49313.597656
+nCells=threads = 493039, numBlock = 963
+ 0kernel[d_clearData]: elapsed time 63.295998
+_NumObjs = 10000000, numBlock = 19532
+ 0device[d_precounting]: elapsed time 48911.007812
+device[d_exclusive_scan]: elapsed time 1184.640015
+Last item in d_Grid_Recs is at 26668900
+device[d_alloc_GridRecs]: elapsed time 333.791992
+_NumObjs = 10000000, numBlock = 19532
+ 0device[d_mapping]: elapsed time 99091.554688
+Sampling AvgRecs Per Cell 54.09, maxRecs 3543 on cell 246442, numMappedRecs 26668901
+host[block_scheduling]: elapsed time 2612.704102
+Total 200096 jobs AvgCells per job 2.46
+numBatches = 219
+ 0kernel[d_MDD]: elapsed time 1527435.750000
+kernel[d_order]: elapsed time 0.000000
+kernel[d_matching]: elapsed time 0.000000
+kernel[copy out]: elapsed time 0.000000
+kernel[decode]: elapsed time 409381.000000
+Output Size = 228540619
+Maximum number of overlaps for a box = 162
+Number of Intersections = 1121815231
+Number of Compared Pairs = 16683783392
+
+host+kernel: elapsed time 1729119.000000
+
+ + Dealloc GridInfo
+ ++++ Total Device Memory free: 387 MB, used: 1148 MB, total: 1535 MB
+ + Dealloc GridRecs
+ ++++ Total Device Memory free: 488 MB, used: 1047 MB, total: 1535 MB
+Number of pairs = 1121815231
+	=====================================
+	*Results report                      
+	=====================================
+	match latency = 1.74238e+06 us
+	clear latency = 0 us
+	match latency Core = 0 us
+	cell latency = 0 us
+	model latency = 0 us
+	step1,1.74238e+06
+	InsertCnt = 0 RemoveCnt = 0
+Prepare Data
+Running ...
+Sampling ...
+avgX = 49.000000, avgY = 49.000000, avgZ = 49.000000
+nrc=2, nc=8, nmr=1.018052, cs=8192, nRecsPerCell=1272564
+nrc=3, nc=27, nmr=1.036320, cs=4096, nRecsPerCell=383822
+nrc=5, nc=125, nmr=1.073508, cs=2048, nRecsPerCell=85880
+nrc=10, nc=1000, nmr=1.150534, cs=1024, nRecsPerCell=11505
+nrc=20, nc=8000, nmr=1.315463, cs=512, nRecsPerCell=1644
+nrc=40, nc=64000, nmr=1.691140, cs=256, nRecsPerCell=264
+nrc=79, nc=493039, nmr=2.644173, cs=128, nRecsPerCell=53
+nrc=157, nc=3869893, nmr=5.504215, cs=64, nRecsPerCell=14
+host[decide _cellSize]: elapsed time 506.304016
+ + GridInfo
+ ++++ Total Device Memory free: 482 MB, used: 1053 MB, total: 1535 MB
+ _hasProfSteps = 0 _cellSize = 128 nCells = 493039 nRowCells 79
+plan_phase 10000000 objs NTPB 256 NTPB 256
+kernel[copy in]: elapsed time 49053.570312
+nCells=threads = 493039, numBlock = 963
+ 0kernel[d_clearData]: elapsed time 63.968002
+_NumObjs = 10000000, numBlock = 19532
+ 0device[d_precounting]: elapsed time 48863.648438
+device[d_exclusive_scan]: elapsed time 1077.216064
+Last item in d_Grid_Recs is at 26668900
+device[d_alloc_GridRecs]: elapsed time 335.424011
+_NumObjs = 10000000, numBlock = 19532
+ 0device[d_mapping]: elapsed time 99038.781250
+Sampling AvgRecs Per Cell 54.09, maxRecs 3543 on cell 246442, numMappedRecs 26668901
+host[block_scheduling]: elapsed time 2597.280029
+Total 200096 jobs AvgCells per job 2.46
+numBatches = 219
+ 0kernel[d_MDD]: elapsed time 1527363.875000
+kernel[d_order]: elapsed time 0.000000
+kernel[d_matching]: elapsed time 0.000000
+kernel[copy out]: elapsed time 0.000000
+kernel[decode]: elapsed time 409375.000000
+Output Size = 228540740
+Maximum number of overlaps for a box = 162
+Number of Intersections = 1121815231
+Number of Compared Pairs = 16683783392
+
+host+kernel: elapsed time 1728564.625000
+
+ + Dealloc GridInfo
+ ++++ Total Device Memory free: 387 MB, used: 1148 MB, total: 1535 MB
+ + Dealloc GridRecs
+ ++++ Total Device Memory free: 488 MB, used: 1047 MB, total: 1535 MB
+Number of pairs = 1121815231
+	=====================================
+	*Results report                      
+	=====================================
+	match latency = 1.74182e+06 us
+	clear latency = 0 us
+	match latency Core = 0 us
+	cell latency = 0 us
+	model latency = 0 us
+	step2,1.74182e+06
+	InsertCnt = 0 RemoveCnt = 0
+Prepare Data
+Running ...
+Sampling ...
+avgX = 49.000000, avgY = 49.000000, avgZ = 49.000000
+nrc=2, nc=8, nmr=1.018052, cs=8192, nRecsPerCell=1272564
+nrc=3, nc=27, nmr=1.036320, cs=4096, nRecsPerCell=383822
+nrc=5, nc=125, nmr=1.073508, cs=2048, nRecsPerCell=85880
+nrc=10, nc=1000, nmr=1.150534, cs=1024, nRecsPerCell=11505
+nrc=20, nc=8000, nmr=1.315463, cs=512, nRecsPerCell=1644
+nrc=40, nc=64000, nmr=1.691140, cs=256, nRecsPerCell=264
+nrc=79, nc=493039, nmr=2.644173, cs=128, nRecsPerCell=53
+nrc=157, nc=3869893, nmr=5.504215, cs=64, nRecsPerCell=14
+host[decide _cellSize]: elapsed time 523.776001
+ + GridInfo
+ ++++ Total Device Memory free: 482 MB, used: 1053 MB, total: 1535 MB
+ _hasProfSteps = 0 _cellSize = 128 nCells = 493039 nRowCells 79
+plan_phase 10000000 objs NTPB 256 NTPB 256
+kernel[copy in]: elapsed time 49200.832031
+nCells=threads = 493039, numBlock = 963
+ 0kernel[d_clearData]: elapsed time 63.743999
+_NumObjs = 10000000, numBlock = 19532
+ 0device[d_precounting]: elapsed time 49004.511719
+device[d_exclusive_scan]: elapsed time 1079.104004
+Last item in d_Grid_Recs is at 26668900
+device[d_alloc_GridRecs]: elapsed time 332.447998
+_NumObjs = 10000000, numBlock = 19532
+ 0device[d_mapping]: elapsed time 98956.093750
+Sampling AvgRecs Per Cell 54.09, maxRecs 3543 on cell 246442, numMappedRecs 26668901
+host[block_scheduling]: elapsed time 2595.104004
+Total 200096 jobs AvgCells per job 2.46
+numBatches = 219
+ 0kernel[d_MDD]: elapsed time 1528859.875000
+kernel[d_order]: elapsed time 0.000000
+kernel[d_matching]: elapsed time 0.000000
+kernel[copy out]: elapsed time 0.000000
+kernel[decode]: elapsed time 409309.000000
+Output Size = 228540549
+Maximum number of overlaps for a box = 162
+Number of Intersections = 1121815231
+Number of Compared Pairs = 16683783392
+
+host+kernel: elapsed time 1730283.000000
+
+ + Dealloc GridInfo
+ ++++ Total Device Memory free: 387 MB, used: 1148 MB, total: 1535 MB
+ + Dealloc GridRecs
+ ++++ Total Device Memory free: 488 MB, used: 1047 MB, total: 1535 MB
+Number of pairs = 1121815231
+	=====================================
+	*Results report                      
+	=====================================
+	match latency = 1.7437e+06 us
+	clear latency = 0 us
+	match latency Core = 0 us
+	cell latency = 0 us
+	model latency = 0 us
+	step3,1.7437e+06
+	InsertCnt = 0 RemoveCnt = 0
+Prepare Data
+Running ...
+Sampling ...
+avgX = 49.000000, avgY = 49.000000, avgZ = 49.000000
+nrc=2, nc=8, nmr=1.018052, cs=8192, nRecsPerCell=1272564
+nrc=3, nc=27, nmr=1.036320, cs=4096, nRecsPerCell=383822
+nrc=5, nc=125, nmr=1.073508, cs=2048, nRecsPerCell=85880
+nrc=10, nc=1000, nmr=1.150534, cs=1024, nRecsPerCell=11505
+nrc=20, nc=8000, nmr=1.315463, cs=512, nRecsPerCell=1644
+nrc=40, nc=64000, nmr=1.691140, cs=256, nRecsPerCell=264
+nrc=79, nc=493039, nmr=2.644173, cs=128, nRecsPerCell=53
+nrc=157, nc=3869893, nmr=5.504215, cs=64, nRecsPerCell=14
+host[decide _cellSize]: elapsed time 506.752014
+ + GridInfo
+ ++++ Total Device Memory free: 482 MB, used: 1053 MB, total: 1535 MB
+ _hasProfSteps = 0 _cellSize = 128 nCells = 493039 nRowCells 79
+plan_phase 10000000 objs NTPB 256 NTPB 256
+kernel[copy in]: elapsed time 49039.871094
+nCells=threads = 493039, numBlock = 963
+ 0kernel[d_clearData]: elapsed time 64.191994
+_NumObjs = 10000000, numBlock = 19532
+ 0device[d_precounting]: elapsed time 48887.265625
+device[d_exclusive_scan]: elapsed time 1196.383911
+Last item in d_Grid_Recs is at 26668900
+device[d_alloc_GridRecs]: elapsed time 331.712006
+_NumObjs = 10000000, numBlock = 19532
+ 0device[d_mapping]: elapsed time 99152.640625
+Sampling AvgRecs Per Cell 54.09, maxRecs 3543 on cell 246442, numMappedRecs 26668901
+host[block_scheduling]: elapsed time 2585.151855
+Total 200096 jobs AvgCells per job 2.46
+numBatches = 219
+ 0kernel[d_MDD]: elapsed time 1527883.375000
+kernel[d_order]: elapsed time 0.000000
+kernel[d_matching]: elapsed time 0.000000
+kernel[copy out]: elapsed time 0.000000
+kernel[decode]: elapsed time 409573.000000
+Output Size = 228539561
+Maximum number of overlaps for a box = 162
+Number of Intersections = 1121815231
+Number of Compared Pairs = 16683783392
+
+host+kernel: elapsed time 1729315.625000
+
+ + Dealloc GridInfo
+ ++++ Total Device Memory free: 387 MB, used: 1148 MB, total: 1535 MB
+ + Dealloc GridRecs
+ ++++ Total Device Memory free: 488 MB, used: 1047 MB, total: 1535 MB
+Number of pairs = 1121815231
+	=====================================
+	*Results report                      
+	=====================================
+	match latency = 1.74259e+06 us
+	clear latency = 0 us
+	match latency Core = 0 us
+	cell latency = 0 us
+	model latency = 0 us
+	step4,1.74259e+06
+	InsertCnt = 0 RemoveCnt = 0
+Prepare Data
+Running ...
+Sampling ...
+avgX = 49.000000, avgY = 49.000000, avgZ = 49.000000
+nrc=2, nc=8, nmr=1.018052, cs=8192, nRecsPerCell=1272564
+nrc=3, nc=27, nmr=1.036320, cs=4096, nRecsPerCell=383822
+nrc=5, nc=125, nmr=1.073508, cs=2048, nRecsPerCell=85880
+nrc=10, nc=1000, nmr=1.150534, cs=1024, nRecsPerCell=11505
+nrc=20, nc=8000, nmr=1.315463, cs=512, nRecsPerCell=1644
+nrc=40, nc=64000, nmr=1.691140, cs=256, nRecsPerCell=264
+nrc=79, nc=493039, nmr=2.644173, cs=128, nRecsPerCell=53
+nrc=157, nc=3869893, nmr=5.504215, cs=64, nRecsPerCell=14
+host[decide _cellSize]: elapsed time 506.496002
+ + GridInfo
+ ++++ Total Device Memory free: 482 MB, used: 1053 MB, total: 1535 MB
+ _hasProfSteps = 0 _cellSize = 128 nCells = 493039 nRowCells 79
+plan_phase 10000000 objs NTPB 256 NTPB 256
+kernel[copy in]: elapsed time 49458.847656
+nCells=threads = 493039, numBlock = 963
+ 0kernel[d_clearData]: elapsed time 64.223999
+_NumObjs = 10000000, numBlock = 19532
+ 0device[d_precounting]: elapsed time 48909.437500
+device[d_exclusive_scan]: elapsed time 1135.776001
+Last item in d_Grid_Recs is at 26668900
+device[d_alloc_GridRecs]: elapsed time 330.208008
+_NumObjs = 10000000, numBlock = 19532
+ 0device[d_mapping]: elapsed time 99006.078125
+Sampling AvgRecs Per Cell 54.09, maxRecs 3543 on cell 246442, numMappedRecs 26668901
+host[block_scheduling]: elapsed time 2578.111816
+Total 200096 jobs AvgCells per job 2.46
+numBatches = 219
+ 0kernel[d_MDD]: elapsed time 1528358.125000
+kernel[d_order]: elapsed time 0.000000
+kernel[d_matching]: elapsed time 0.000000
+kernel[copy out]: elapsed time 0.000000
+kernel[decode]: elapsed time 410236.000000
+Output Size = 228540604
+Maximum number of overlaps for a box = 162
+Number of Intersections = 1121815231
+Number of Compared Pairs = 16683783392
+
+host+kernel: elapsed time 1730017.125000
+
+ + Dealloc GridInfo
+ ++++ Total Device Memory free: 387 MB, used: 1148 MB, total: 1535 MB
+ + Dealloc GridRecs
+ ++++ Total Device Memory free: 488 MB, used: 1047 MB, total: 1535 MB
+Number of pairs = 1121815231
+	=====================================
+	*Results report                      
+	=====================================
+	match latency = 1.74333e+06 us
+	clear latency = 0 us
+	match latency Core = 0 us
+	cell latency = 0 us
+	model latency = 0 us
+	step5,1.74333e+06
+	InsertCnt = 0 RemoveCnt = 0
+Close CUDA system

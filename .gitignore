@@ -1,0 +1,9 @@
+*.txt
+*.o
+*.a
+*.log
+*.swp
+*/CMakeFiles/*
+*/CMakeCache.txt
+*/cmake_install.cmake
+!*/CMakeList.txt

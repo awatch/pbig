@@ -1,0 +1,60 @@
+cuda_hybrid.cu(201): warning: variable "f_tid" was declared but never referenced
+
+cuda_hybrid.cu(615): warning: variable "rid2" was set but never used
+
+cuda_hybrid.cu(619): warning: variable "nRegs_y" was set but never used
+
+cuda_hybrid.cu(637): warning: variable "encode_unit" was set but never used
+
+cuda_hybrid.cu(1032): warning: variable "encode_unit" was set but never used
+
+cuda_hybrid.cu(1331): warning: variable "cur_nr" was declared but never referenced
+
+cuda_hybrid.cu(1332): warning: variable "acc_nr" was declared but never referenced
+
+cuda_hybrid.cu(1685): warning: variable "accumulation" was declared but never referenced
+
+cuda_hybrid.cu(1904): warning: variable "temp" was declared but never referenced
+
+cuda_hybrid.cu(201): warning: variable "f_tid" was declared but never referenced
+
+cuda_hybrid.cu(615): warning: variable "rid2" was set but never used
+
+cuda_hybrid.cu(619): warning: variable "nRegs_y" was set but never used
+
+cuda_hybrid.cu(637): warning: variable "encode_unit" was set but never used
+
+cuda_hybrid.cu(1032): warning: variable "encode_unit" was set but never used
+
+cuda_hybrid.cu(1331): warning: variable "cur_nr" was declared but never referenced
+
+cuda_hybrid.cu(1332): warning: variable "acc_nr" was declared but never referenced
+
+cuda_hybrid.cu(1685): warning: variable "accumulation" was declared but never referenced
+
+cuda_hybrid.cu(1904): warning: variable "temp" was declared but never referenced
+
+ptxas info    : Compiling entry function '_Z10d_matchingPjP12Cuda_RegInfoS_S_S_S_jS_S_S_jjS_S_PyS_' for 'sm_20'
+ptxas info    : Function properties for _Z10d_matchingPjP12Cuda_RegInfoS_S_S_S_jS_S_S_jjS_S_PyS_
+    520 bytes stack frame, 16 bytes spill stores, 8 bytes spill loads
+ptxas info    : Used 30 registers, 4+0 bytes lmem, 560+0 bytes smem, 152 bytes cmem[0], 8 bytes cmem[16]
+ptxas info    : Compiling entry function '_Z9d_mappingP12Cuda_RegInfoPjS1_S1_ijjjS1_' for 'sm_20'
+ptxas info    : Function properties for _Z9d_mappingP12Cuda_RegInfoPjS1_S1_ijjjS1_
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 24 registers, 88 bytes cmem[0]
+ptxas info    : Compiling entry function '_Z14d_postcountingP12Cuda_RegInfoPjS1_ijjjS1_' for 'sm_20'
+ptxas info    : Function properties for _Z14d_postcountingP12Cuda_RegInfoPjS1_ijjjS1_
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 22 registers, 80 bytes cmem[0]
+ptxas info    : Compiling entry function '_Z13d_precountingP12Cuda_RegInfoPjS1_ijjjS1_' for 'sm_20'
+ptxas info    : Function properties for _Z13d_precountingP12Cuda_RegInfoPjS1_ijjjS1_
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 14 registers, 80 bytes cmem[0]
+ptxas info    : Compiling entry function '_Z11d_clearDatajPjS_S_S_S_' for 'sm_20'
+ptxas info    : Function properties for _Z11d_clearDatajPjS_S_S_S_
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 12 registers, 80 bytes cmem[0]
+ptxas info    : Compiling entry function '_Z13CudaInitCellsPyPjS0_S0_S0_S0_' for 'sm_20'
+ptxas info    : Function properties for _Z13CudaInitCellsPyPjS0_S0_S0_S0_
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 10 registers, 80 bytes cmem[0], 4 bytes cmem[16]

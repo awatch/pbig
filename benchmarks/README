@@ -1,0 +1,24 @@
+Benchmarks:
+	test1 (uniform distribution):
+		Boxes are randomly distributed in a 3-D space of size 10^4 × 10^4 × 10^4.
+		Specifically, the coordinate of the center point of a box in each dimension
+		is a uniform random variable within the interval [0,10000], and the length
+		of a box in each dimension is a uniform random variable within the interval [1,100].
+		The numbers of boxes tested are 10^3, 10^4, 10^5, 10^6 and 10^7.
+
+	test2 (degree of coverage):
+		The Degree of Coverage (DoC) is used to represent the density of boxes.
+		The DoC settings include 10^−3, 10^−2, 10^−1, 1 and 10.
+
+	test3 (normal distribution):
+		The coordinates of the center points of boxes follow a Gaussian distribution, 
+		whose mean is (5000,5000,5000) with a standard deviation of 1000. Boxes are distributed 
+		in a 3-D space of size 10^4 x 10^4 x 10^4. The numbers of boxes tested are
+		10^3, 10^4, 10^5, 10^6, and 10^7.
+
+Using test1 as an example:
+	Perform test1 by 
+		./go.sh test1	
+	Get the performance result by 
+		./proc_test1.sh test1.set	
+

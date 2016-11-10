@@ -1,0 +1,9 @@
+PBIG Program v0.2 Usage:
+
+1. Build the project using cmake
+   #> cmake .
+2. Compile sources and link the library 
+   #> make clean;make
+3. Execute the program 
+   #> ./pbig
+

@@ -1,0 +1,7 @@
+compile:
+	rm CMakeCache.txt // if CMake Error
+	cmake .
+	make clean;make
+
+simple test:
+	./test.sh

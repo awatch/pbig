@@ -1,0 +1,37 @@
+	*Results report                      
+	=====================================
+	match latency = 532568 us
+	match latency Core = 0 us
+	step1,532568
+Running ...
+Number of pairs = 49514252
+	=====================================
+	*Results report                      
+	=====================================
+	match latency = 533115 us
+	match latency Core = 0 us
+	step2,533115
+Running ...
+Number of pairs = 49514252
+	=====================================
+	*Results report                      
+	=====================================
+	match latency = 533538 us
+	match latency Core = 0 us
+	step3,533538
+Running ...
+Number of pairs = 49514252
+	=====================================
+	*Results report                      
+	=====================================
+	match latency = 533602 us
+	match latency Core = 0 us
+	step4,533602
+Running ...
+Number of pairs = 49514252
+	=====================================
+	*Results report                      
+	=====================================
+	match latency = 533234 us
+	match latency Core = 0 us
+	step5,533234
