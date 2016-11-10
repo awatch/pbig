@@ -7,32 +7,32 @@ Developer:
 ========================================================================================
 
 The implementation requires the packages:
-	cmake ( >= 2.8.5 ) for cuda support
-	g++ 
-	nvcc 
+    cmake ( >= 2.8.5 ) for cuda support
+    g++ 
+    nvcc 
 
 Before compiliation, several nvironment variables below are required:
-	export LD_LIBRARY_PATH='path to cuda runtime library'
-		e.g., /usr/local/cuda/lib64
-	export NVSDKCUDA_ROOT='path to cuda sdk'
-		e.g., /usr/local/cuda/NVIDIA_GPU_Computing_SDK/C
+    export LD_LIBRARY_PATH='path to cuda runtime library'
+        e.g., /usr/local/cuda/lib64
+    export NVSDKCUDA_ROOT='path to cuda sdk'
+        e.g., /usr/local/cuda/NVIDIA_GPU_Computing_SDK/C
 
 The implementation needs several CUDA libraries:
-	libcutil
-	libshrutil
+    libcutil
+    libshrutil
 
 Project struture:
-	src			: source files
-	benchmarks	: three benchmarks
-	package		: an example of using pbig library
+    src			: source files
+    benchmarks	: three benchmarks
+    package		: an example of using pbig library
 
 
 Compilation:
-	1. Proceed to src/pbig
-	2. Please read src/pbig/README
+    1. Proceed to src/pbig
+    2. Please read src/pbig/README
 
 Testing:
-	1. A simple test by performing ./test.sh
-	2. Benchmarks
-		go to benchmarks/ and check the 'README' file inside
+    1. A simple test by performing ./test.sh
+    2. Benchmarks
+       go to benchmarks/ and check the 'README' file inside
 		
