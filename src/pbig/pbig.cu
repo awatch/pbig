@@ -10,8 +10,9 @@
 #include <thrust/sort.h>
 #include <thrust/transform_reduce.h>
 #include <thrust/functional.h>
-#include <cutil_inline.h>
 
+#include <helper_cuda.h>
+#include <helper_timer.h>
 
 #include "rect.h"
 #include "report.h"
@@ -51,9 +52,11 @@ float time_check = 0.0;
 float time_order = 0.0;
 float total_cuda_time = 0.0;
 
-uint hTimerCopyOut;
-uint hTimerCheck;
-uint hTimerOrder;
+typedef unsigned uint;
+
+StopWatchInterface *hTimerCopyOut = NULL;
+StopWatchInterface *hTimerCheck = NULL;
+StopWatchInterface *hTimerOrder = NULL;
 
 unsigned int _assignCs = 0;
 unsigned int _NumObjs = 0;
@@ -125,9 +128,9 @@ float elapsedTime;
 
 void cuda_finalize() {
 
-    cutilCheckError( cutDeleteTimer(hTimerCopyOut) );
-    cutilCheckError( cutDeleteTimer(hTimerCheck) );
-    cutilCheckError( cutDeleteTimer(hTimerOrder) );
+    sdkStopTimer(&hTimerCopyOut);
+    sdkStopTimer(&hTimerCheck);
+    sdkStopTimer(&hTimerOrder);
 
     cudaEventDestroy(e_start);
     cudaEventDestroy(e_stop);
@@ -544,7 +547,7 @@ void initTexTable(cudaArray *cuMergedArray, unsigned int* mergedTable, unsigned 
 {
 	cudaChannelFormatDesc channelDesc_dist = cudaCreateChannelDesc(  32, 0, 0, 0, cudaChannelFormatKindUnsigned);
 
-	cutilSafeCall( cudaMallocArray( &cuMergedArray, &channelDesc_dist, len, 0) );
+	checkCudaErrors( cudaMallocArray( &cuMergedArray, &channelDesc_dist, len, 0) );
 
 	cudaMemcpyToArray( cuMergedArray, 0, 0, mergedTable, len*sizeof(unsigned int), cudaMemcpyHostToDevice);
 
@@ -2091,10 +2094,10 @@ void allocMemForJob() {
 int device_init(unsigned int deviceSymbol)
 {
 
-	//cutilSafeCall(cudaSetDevice(0));
-	//cutilSafeCall(cudaDeviceEnablePeerAccess(1, 0));
-	//cutilSafeCall(cudaSetDevice(1));
-	//cutilSafeCall(cudaDeviceEnablePeerAccess(0, 0));
+	//checkCudaErrors(cudaSetDevice(0));
+	//checkCudaErrors(cudaDeviceEnablePeerAccess(1, 0));
+	//checkCudaErrors(cudaSetDevice(1));
+	//checkCudaErrors(cudaDeviceEnablePeerAccess(0, 0));
 
 	if ( deviceSymbol == 480 )
 		cuDeviceID = 0;
@@ -2178,16 +2181,16 @@ void pbig_init(unsigned int num, unsigned range, unsigned int cs, unsigned int d
 	LOG("NStreams=%d, NStreams=%d\n", NStreams, NStreams);
 	
 	cuDeviceID = deviceID;
-	cutilSafeCall(cudaSetDevice(deviceID));
+	checkCudaErrors(cudaSetDevice(deviceID));
 	cudaSetDeviceFlags( cudaDeviceBlockingSync); 
 
     cudaEventCreate(&e_start);
     cudaEventCreate(&e_stop);
 	MEM_STATUS("Init");
 
-    cutilCheckError( cutCreateTimer(&hTimerCopyOut) );
-    cutilCheckError( cutCreateTimer(&hTimerCheck) );
-    cutilCheckError( cutCreateTimer(&hTimerOrder) );
+    sdkCreateTimer(&hTimerCopyOut);
+    sdkCreateTimer(&hTimerCheck);
+    sdkCreateTimer(&hTimerOrder);
 
 	//if ( _NumObjs > MAXALLOCRECTS ) {
 	//	LOG("NumObjs(%ld) > MAXALLOCRECTS(%ld)\n", _NumObjs, MAXALLOCRECTS);
