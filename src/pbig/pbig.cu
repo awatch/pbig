@@ -387,7 +387,9 @@ __global__ void d_mapping( unsigned int nIter, RectInfo *allRectInfoList,unsigne
 			int ymin = -1;
 			for(int j=s_l;j<=s_u;j++) {
 				unsigned int m_gid = product + nRowCells * j;
+#if MERGED == 1
 				int xmin = -1;
+#endif
 				for(int i=f_l;i<=f_u;i++) {
 					unsigned int gid = m_gid + i;
 					if ( gid >= nCells )
@@ -478,8 +480,7 @@ __device__ void prefix_scan(unsigned int hasProfSteps, unsigned int gid, unsigne
 	__shared__ unsigned int g_cnt;
 	__shared__ unsigned int sh_idx[NTPB];
 	__shared__ unsigned int g_idx;
-	unsigned int offset = 1;
-	unsigned int thid, ai, bi;
+	unsigned int thid;
 	unsigned int last = NTPB - 1;
 
 
@@ -1725,7 +1726,6 @@ static void match_phase(unsigned int job_i)
 	uint orderDepth = 0, streamDepth = 0;
 	unsigned int cur = 0, prev = 1;
 	unsigned long long int output_size = 0;
-	int total_loops = numBatches;
 	int extraloops;
 	unsigned int prefetch_output = 0;
 
@@ -1819,7 +1819,7 @@ static void match_phase(unsigned int job_i)
 													 d_Grid_StartI,
 													 d_Grid_Merged,
 													 d_Grid_Recs,
-													 job_s,															// global job offset
+													 job_s,
 													 kstart,
 													 d_jobs,
 													 _cellSize,
@@ -1980,13 +1980,6 @@ void pbig_check(RectInfo *input, struct report *r)
 	deallocMemForGridRecs();
 }
 
-#if 1
-static void setCacheSize(unsigned int option)
-{
-
-
-}
-#endif
 
 void allocMemForInitAndRects()
 {
